@@ -12988,6 +12988,10 @@ section {
   margin-bottom: 50vh;
 }
 
+nav {
+  background-color: #fcfef7;
+  height: 8rem;
+}
 nav .navbar-brand {
   max-width: calc(100% - 7rem);
 }
@@ -12995,6 +12999,8 @@ nav .navbar-brand img {
   width: 250px;
   max-width: 100%;
   z-index: 2;
+  position: absolute;
+  top: 1rem;
 }
 nav ul li {
   font-size: 18px;
@@ -13002,9 +13008,8 @@ nav ul li {
   padding: 0 1.2rem;
 }
 nav ul li a {
-  color: #fcfef7 !important;
+  color: #212529 !important;
   position: relative;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 nav ul li a::after {
   transition: all ease 0.5s;
@@ -13139,7 +13144,7 @@ header .logo-header img {
   content: " ";
   width: 0%;
   height: 100%;
-  background: #d60000;
+  background: #fcfef7;
   position: absolute;
   transition: all 0.4s ease-in-out;
   right: 0;
@@ -13164,8 +13169,8 @@ header .logo-header img {
   transition: all 0.3s ease-in-out;
 }
 
-.changing-button:hover span {
-  color: #03a120;
+.changing-button:hover span, .changing-button:hover a {
+  color: #212529;
   animation: scaleUp 0.3s ease-in-out;
 }
 
@@ -13181,13 +13186,6 @@ header .logo-header img {
   }
 }
 .top-information {
-  position: absolute;
-  top: 0;
-  width: fit-content;
-  right: 0;
-  border-bottom-left-radius: 12px;
-  border: 5px solid #fcfef7;
-  border-top: none;
   background-color: #21681e;
 }
 
@@ -13233,21 +13231,10 @@ header .logo-header img {
 .nav-hero .custom-shape-divider-bottom-1692610859 .shape-fill {
   fill: #F8F8F8;
 }
-.nav-hero .logo-bg {
-  position: absolute;
-  width: 30rem;
-  height: 18rem;
-  background-color: #ffffff;
-  opacity: 0.9;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-bottom-right-radius: 30%;
-}
 
 .hero {
   position: relative;
-  padding: 1rem 0 10rem;
+  padding: 9rem 0 10rem;
 }
 @media (max-width: 576px) {
   .hero {
@@ -13284,6 +13271,20 @@ header .logo-header img {
   .hero .hero-flex .info-side h1, .hero .hero-flex .info-side .h1 {
     font-size: 38px;
   }
+}
+.hero .hero-flex .info-side h1 .underline, .hero .hero-flex .info-side .h1 .underline {
+  position: relative;
+}
+.hero .hero-flex .info-side h1 .underline::after, .hero .hero-flex .info-side .h1 .underline::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: 11px;
+  width: 100%;
+  height: 10px;
+  background: #9ad395;
+  z-index: -1;
+  border-radius: 4px;
 }
 .hero .hero-flex .info-side p {
   font-size: 18px;
@@ -13326,11 +13327,11 @@ header .logo-header img {
   margin: 0 auto;
   padding: 2rem;
   border-radius: 50%;
-  background-color: #7bd89c;
+  background-color: #9ad395;
 }
 .below-header .flex .column .img-div img {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
 }
 .below-header .flex .column .info-div {
   padding-left: 2rem;

@@ -1,11 +1,17 @@
 nav {
     // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: $white;
+    height: 8rem;
+
     .navbar-brand {
         max-width: calc(100% - 7rem);
+
         img {
             width: 250px;
             max-width: 100%;
             z-index: 2;
+            position: absolute;
+            top: 1rem;
         }
     }
 
@@ -16,10 +22,11 @@ nav {
             padding: 0 1.2rem;
 
             a {
-                color: $white !important;
+                color: $dark !important;
                 position: relative;
-                text-shadow: 0 0 8px rgba(0,0,0,0.5);
-                &::after{
+                // text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+
+                &::after {
                     transition: all ease .5s;
                     content: "";
                     position: absolute;
@@ -31,9 +38,9 @@ nav {
                 }
             }
 
-            &:hover{
-                a{
-                    &::after{
+            &:hover {
+                a {
+                    &::after {
                         width: 100%;
                     }
                 }

@@ -19,10 +19,11 @@
     content: " ";
     width: 0%;
     height: 100%;
-    background: $secondary;
+    background: $white;
     position: absolute;
     transition: all 0.4s ease-in-out;
     right: 0;
+    
 }
 
 .changing-button:hover::after {
@@ -44,8 +45,8 @@
     transition: all 0.3s ease-in-out;
 }
 
-.changing-button:hover span {
-    color: $primary;
+.changing-button:hover span, .changing-button:hover a{
+    color: $dark;
     animation: scaleUp 0.3s ease-in-out;
 }
 

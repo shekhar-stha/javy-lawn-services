@@ -26,8 +26,8 @@
 <body>
     <!-- Top of the navbar -->
     <div class="top-information">
-        <div class="container py-3 d-flex flex-vm-row flex-column align-items-center justify-content-between">
-            <div class="d-flex align-items-center ms-5 me-5">
+        <div class="container py-3 d-flex align-items-center justify-content-md-between justify-content-center">
+            <div class="d-md-flex d-none align-items-center ms-5 me-5">
                 <a href="tel:+13176579806" title="phone number" class="text-white fw-500 fs-18">
                     <i class="fa-solid fa-location-dot fs-20 me-1"></i>
                     Indianapolis, Indiana
@@ -37,7 +37,7 @@
             <div class="d-flex align-items-center ms-5 me-5">
                 <a href="tel:+13176579806" title="phone number" class="text-white fw-500 fs-18">
                     <i class="fs-15 fa-solid fa-phone text-white fs-20 me-1"></i>
-                    <span class="fw-600 d-sm-inline d-none">Call Now : </span>+1 (317) 657-9806
+                    <span class="fw-600 d-md-inline d-none">Call Now : </span>+1 (317) 657-9806
                 </a>
             </div>
         </div>
@@ -46,29 +46,49 @@
         <nav class="navbar navbar-light navbar-expand-lg">
             <div class="container">
                 <a title="Company Logo" class="navbar-brand" href="/index.html"><img src="/img/logo.png" alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+
+                <button class="btn d-xl-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+                    <i class="fa-solid fa-bars fs-24"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a title="Homepage" class="nav-link" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a title="Commercial  Services" class="nav-link"
-                                href="/commercial-lawn-services-in-san-antonio-tx.html">Commercial Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a title="Residential Services" class="nav-link"
-                                href="/residential-lawn-services-in-san-antonio-tx.html">Residential Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a title="Lawn Services" class="nav-link" href="/lawn-services-in-san-antonio-tx.html">Lawn
-                                Services</a>
-                        </li>
-                    </ul>
+
+                <div class="offcanvas-xl offcanvas-end w-100" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header bg-dark">
+
+                        <a title="Logo Inside" class="navbar-brand mb-0 d-xl-none d-inline" href="/index.html">
+                            <img class="mb-0" src="/img/logo.png" alt="Logo Inside">
+                        </a>
+
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body w-100">
+                        <ul class="navbar-nav mb-xl-0 mb-3 d-flex justify-content-end flex-xl-row flex-column w-100">
+                            <li class="nav-item me-xl-4">
+                                <a title="Lawn Services" class="nav-link"
+                                    href="/lawn-services-near-indianapolis.html">Lawn
+                                    Services</a>
+                            </li>
+
+                            <li class="nav-item me-xl-4">
+                                <a title="Commercial Services" class="nav-link"
+                                    href="/commercial-lawn-services-indianapolis.html">Commercial
+                                    Services</a>
+                            </li>
+
+                            <li class="nav-item ms-xxl-4">
+                                <a title="Residential Services" class="nav-link"
+                                    href="/residential-lawn-services-indianapolis.html">Residential
+                                    Services</a>
+                            </li>
+
+                            <div>
+                                <button class="changing-button rounded-1 fs-20 ms-3">
+                                    <a class="px-4" title="Call Now" href="tel:+13176579806">Call Now</a></button>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -77,19 +97,21 @@
             <div class="container">
                 <div class="hero-flex">
                     <div class="info-side" data-aos="fade-right">
-                        <h1>Get the Finest Lawn Services by Certified Professionals in <span class="underline">
-                                Indianapolis</span>, Indiana</h1>
-                        <p>We offer various services including Lawn Mowing, Trimming and Blowing. Call Us Now to get a
-                            Free Estimate.
+                        <h1>Transforming <span class="underline">Indianapolis</span> Lawns into Stunning Outdoor Spaces
+                        </h1>
+                        <p>
+                            Your Local Experts in Mowing, Edging, Weeding, Leaf Removal, and Yard Cleanups – We Do It
+                            All for Residential and Commercial Properties!
                         </p>
 
-                        <div class="mt-5 d-flex justify-content-sm-start justify-content-center">
-                            <a title="Call Now" class="btn btn-light fw-500 fs-20 rounded-1 px-4"
+                        <div class="mt-5 d-vm-flex justify-content-start">
+                            <a title="Call Now" class="btn btn-light fw-500 fs-20 d-block rounded-1 px-4"
                                 href="tel:+13176579806">
                                 Call Now
                             </a>
 
-                            <a title="service" class="btn btn-outline-light border-3 fs-20 rounded-1 px-4 ms-4 fw-600"
+                            <a title="service"
+                                class="btn btn-outline-light border-3 d-block fs-20 rounded-1 px-4 ms-vm-4 mt-vm-0 mt-4 fw-600"
                                 href="/index.html#services">
                                 Our Services
                             </a>
@@ -128,7 +150,7 @@
                     </div>
                     <div class="info-div">
                         <h3>Commercial Services</h3>
-                        <p>Maintaining landscapes hassle-free for a professional look.</p>
+                        <p>Level Up your business space with expert mowing, landscaping, and maintenance solutions.</p>
                     </div>
                 </div>
 
@@ -138,41 +160,37 @@
                     </div>
                     <div class="info-div">
                         <h3>Residential Services</h3>
-                        <p>Enhancing your home with a vibrant, inviting lawn.</p>
+                        <p>Crafting vibrant, welcoming homes through top-notch lawn care and outdoor enhancement.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About Us -->
     <section class="about-us py-3">
         <div class="container">
             <div class="about-us-flex">
-                <div class="img-div" data-aos="fade-right">
+                <div class="img-div">
                     <img style="transform: scaleX(-1);" src="/img/trimming.jpeg" alt="Trimming Lawn">
                 </div>
-                <div class="info-div" data-aos="fade-left">
-                    <p class="sub-header">Commerical and Residential Services</p>
-                    <h3 class="header">The Best Lawn Care Services in San Antonio, TX</h3>
+                <div class="info-div">
+                    <p class="sub-header">Your Local Lawn Care Experts in Indianapolis</p>
+                    <h3 class="header">Get to Know Javy's Lawn Services</h3>
 
-                    <p class="fs-16">Kingdom Lawn Services - Your premier lawn care experts serving San Antonio, Texas!
-                        With a passion
-                        for crafting captivating landscapes, we take pride in turning ordinary lawns into extraordinary
-                        outdoor retreats. Our comprehensive range of services ensures that your lawn remains pristine
-                        and vibrant year-round. From the precision of lawn mowing to the artistry of trimming and the
-                        meticulousness of edging, our skilled team leaves no detail untouched, ensuring your lawn stands
-                        out in its lush perfection.
-                        <br> <br>
-                        When seasonal changes bring leaves to your yard, our efficient leaf cleanups swiftly restore
-                        order and tidiness. Additionally, our tree trimming services sculpt and shape your trees, adding
-                        an elegant touch to your landscape. For those bare patches or worn-out areas, our Sod
-                        installation gives you a fresh carpet of green, transforming your space instantly. To keep your
-                        landscape nourished and your plants thriving, we provide top-quality mulching
-                        services that enrich the soil and retain moisture.
-
-                        At Kingdom Lawn Services, we prioritize environmental responsibility, and our junk haul offs
-                        ensure that any unwanted clutter is removed with care and efficiency. Contact us now for
-                        exceptional lawn services in San Antonio, Texas!
+                    <p class="fs-16">At Javy's Lawn Service, our journey began with a passion for transforming ordinary
+                        lawns into extraordinary outdoor spaces. With deep roots in Indianapolis, Indiana, we've
+                        nurtured landscapes and relationships alike. Our commitment to quality and personalized care has
+                        earned us the trust of both residential and commercial clients.
+                        <br><br>
+                        Driven by a love for nature's beauty, we believe that every blade of grass tells a story. Our
+                        team of dedicated professionals brings years of expertise to every project, ensuring meticulous
+                        attention to detail and unparalleled results. From mowing to leaf removal, we're dedicated to
+                        creating lush, vibrant landscapes that reflect the essence of Indianapolis.
+                        <br><br>
+                        With Javy's Lawn Service, you're not just hiring a team – you're partnering with a community of
+                        individuals who take pride in curating outdoor havens that inspire. Discover the difference our
+                        passion and expertise can make for your lawn.
                     </p>
 
                     <div>
@@ -184,8 +202,9 @@
         </div>
     </section>
 
+    
     <!-- Social Media Ratings -->
-    <section data-aos="fade-up" class="py-2 position-relative social-media">
+    <section  class="py-2 position-relative social-media">
         <div class="custom-shape-divider-top-1692689897">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -255,14 +274,14 @@
     </section>
 
     <!-- Our Services Section -->
-    <section id="services" class="services position-relative mb-0" data-aos="zoom-in">
+    <section id="services" class="services position-relative">
         <div class="container">
             <p class="sub-header">Our Services</p>
             <h3 class="header">Services that we provide</h3>
             <div class="services-grid">
                 <div class="service-col">
                     <div class="img-div">
-                        <img src="/img/mowing-grass.jpg" alt="Lawn Mowing">
+                        <img src="/img/lawn-mower.jpg" alt="Lawn Mowing">
                     </div>
                     <div class="information">
                         <h4>Lawn Mowing</h4>
@@ -277,7 +296,7 @@
                         <img src="/img/lawn-blowing.jpg" alt="Lawn Blowing">
                     </div>
                     <div class="information">
-                        <h4>Lawn Blowing</h4>
+                        <h4>Leaf Removal</h4>
                         <p>Say goodbye to debris and leaves with our efficient blowing services, leaving your lawn
                             immaculate and ready to shine.</p>
                         <a class="btn btn-primary w-100 mt-3 rounded-3" href="tel:+13176579806">Call Now</a>
@@ -286,10 +305,34 @@
 
                 <div class="service-col">
                     <div class="img-div">
-                        <img src="/img/hedge-trimming.jpg" alt="Hedge Trimming">
+                        <img src="/img/edging.jpeg" alt="Hedge Trimming">
                     </div>
                     <div class="information">
-                        <h4>Hedge Trimming</h4>
+                        <h4>Edging</h4>
+                        <p>Enhance your property's aesthetics with our precise hedge trimming. Create clean lines and
+                            beautiful shapes.</p>
+                        <a class="btn btn-primary w-100 mt-3 rounded-3" href="tel:+13176579806">Call Now</a>
+                    </div>
+                </div>
+
+                <div class="service-col">
+                    <div class="img-div">
+                        <img src="/img/weeding.jpg" alt="Hedge Trimming">
+                    </div>
+                    <div class="information">
+                        <h4>Weeding</h4>
+                        <p>Enhance your property's aesthetics with our precise hedge trimming. Create clean lines and
+                            beautiful shapes.</p>
+                        <a class="btn btn-primary w-100 mt-3 rounded-3" href="tel:+13176579806">Call Now</a>
+                    </div>
+                </div>
+
+                <div class="service-col">
+                    <div class="img-div">
+                        <img src="/img/backyard.jpg" alt="Hedge Trimming">
+                    </div>
+                    <div class="information">
+                        <h4>Yard Cleanups</h4>
                         <p>Enhance your property's aesthetics with our precise hedge trimming. Create clean lines and
                             beautiful shapes.</p>
                         <a class="btn btn-primary w-100 mt-3 rounded-3" href="tel:+13176579806">Call Now</a>
@@ -320,16 +363,7 @@
         </div>
     </section>
 
-    <section class="cta mt-0">
-        <div class="container">
-            <h4 class="text-center text-white">Get a Free Estimate for your Lawn Services.</h4>
-            <div class="d-flex justify-content-center">
-                <a class="btn btn-light fw-500 px-5 fs-20 mt-4" href="tel:+13176579806">Call Now</a>
-            </div>
-        </div>
-        <img src="/img/gardener-weeding.jpeg" alt="Aerial View">
-    </section>
-
+    
     <!-- Commercial Residential -->
     <section class="commercial-residential">
         <div class="right-circle">
@@ -341,7 +375,7 @@
             <div class="service-row py-3">
                 <div class="service-col mb-lg-0 mb-5">
                     <div class="img-div">
-                        <img src="/img/commercial-lawn.jpg" alt="Commercial Lawn">
+                        <img src="/img/commercial-house.jpg" alt="Commercial Lawn">
                     </div>
                     <div class="info-div">
                         <a title="Commercial Lawn Service" href="/commercial-lawn-services-baytown.html"
@@ -363,7 +397,7 @@
 
                 <div class="service-col">
                     <div class="img-div">
-                        <img src="/img/resident-lawn.jpg" alt="Resident Lawn">
+                        <img src="/img/residential-house-new.jpg" alt="Resident Lawn">
                     </div>
                     <div class="info-div">
                         <a title="Commercial Lawn Services nav" href="/residential-lawn-services-baytown.html"
@@ -383,6 +417,16 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="cta mt-0">
+        <div class="container">
+            <h4 class="text-center text-white">Get a Free Estimate for your Lawn Services.</h4>
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-light fw-500 px-5 fs-20 mt-4" href="tel:+13176579806">Call Now</a>
+            </div>
+        </div>
+        <img src="/img/gardener-weeding.jpeg" alt="Aerial View">
     </section>
 
     <section class="about-us py-3">
@@ -439,7 +483,7 @@
                     <div class="portfolio-pic__row row">
                         <div class="col-xl-4 col-lg-4 col-md-4">
                             <div class="content">
-                                <img src="/img/commercial-lawn.jpg" class="img-fluid portfolio__img" alt="card-img-1" />
+                                <img src="/img/gallery1.jpeg" class="img-fluid portfolio__img" alt="card-img-1" />
                                 <!-- * Overlay Section Started  -->
                                 <div class="content-overlay"></div>
                                 <div class="content-details content-details2 fadeIn-bottom fadeIn-right">
@@ -453,7 +497,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-4">
                             <div class="content">
-                                <img src="/img/lawn-blowing.jpg" class="img-fluid portfolio__img" alt="card-img-2" />
+                                <img src="/img/gallery2.jpeg" class="img-fluid portfolio__img" alt="card-img-2" />
                                 <!-- * Overlay Section Started  -->
                                 <div class="content-overlay"></div>
                                 <div class="content-details content-details2 fadeIn-bottom fadeIn-right">
@@ -467,7 +511,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-4">
                             <div class="content">
-                                <img src="/img/lot-cleaning.jpeg" class="img-fluid portfolio__img" alt="card-img-3" />
+                                <img src="/img/gallery3.jpeg" class="img-fluid portfolio__img" alt="card-img-3" />
                                 <!-- * Overlay Section Started  -->
                                 <div class="content-overlay"></div>
                                 <div class="content-details content-details2 fadeIn-bottom fadeIn-right">
@@ -484,7 +528,7 @@
                     <div class="portfolio-pic__row row">
                         <div class="col-xl-3 col-lg-3 col-md-4">
                             <div class="content h-100">
-                                <img style="object-fit: contain;" src="/img/fb-img.jpg" class="img-fluid portfolio__img"
+                                <img src="/img/gallery4.jpeg" class="img-fluid portfolio__img"
                                     alt="card-img-4" />
                                 <!-- * Overlay Section Started  -->
                                 <div class="content-overlay"></div>
@@ -499,7 +543,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-4">
                             <div class="content h-100">
-                                <img src="/img/hedge-trimming.jpg" class="portfolio__img portfolio__img--big"
+                                <img src="/img/gallery5.jpeg" class="portfolio__img portfolio__img--big"
                                     alt="card-img-5" />
                                 <!-- * Overlay Section Started  -->
                                 <div class="content-overlay"></div>

@@ -80,7 +80,7 @@
     padding: 9rem 0 10rem;
 
     @media (max-width: 576px) {
-        padding: 3rem 0;
+        padding: 4rem 0 6rem;
     }
 
     .hero-flex {
@@ -103,10 +103,6 @@
                 margin-top: 2rem;
                 width: 90%;
                 text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-
-                @media (max-width: 1200px) {
-                    text-align: center;
-                }
 
                 @media (max-width: 768px) {
                     font-size: 38px;
@@ -136,10 +132,6 @@
                 margin-bottom: 2rem;
                 width: 80%;
                 text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-
-                @media (max-width: 1200px) {
-                    text-align: center;
-                }
             }
         }
     }
@@ -158,6 +150,10 @@
         overflow: hidden;
         gap: 4rem;
 
+        @media (max-width: 1200px) {
+            flex-direction: column;
+        }
+
         .column {
             z-index: 2;
             width: 45%;
@@ -168,12 +164,31 @@
             border-radius: 12px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+            @media (max-width: 1200px) {
+                width: 80%;
+                justify-content: center;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+            @media (max-width: 500px) {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
             .img-div {
                 width: fit-content;
                 margin: 0 auto;
                 padding: 1.5rem;
                 border-radius: 50%;
                 background-color: #9ad395;
+
+                @media (max-width: 1200px) {
+                    margin: 0;
+                }
 
                 img {
                     width: 3.5rem;
@@ -252,9 +267,9 @@
             }
         }
 
-        .img-div-right{
+        .img-div-right {
             &::after {
-                right: -1rem !important; 
+                right: -1rem !important;
                 left: inherit !important;
             }
         }
@@ -300,14 +315,14 @@
         line-height: 0;
         transform: rotate(180deg);
     }
-    
+
     .custom-shape-divider-bottom-1692689991 svg {
         position: relative;
         display: block;
         width: calc(137% + 1.3px);
         height: 11px;
     }
-    
+
     .custom-shape-divider-bottom-1692689991 .shape-fill {
         fill: #F8F8F8;
     }
@@ -344,10 +359,11 @@
             -webkit-backdrop-filter: blur(5px);
             border: 1px solid rgba(255, 255, 255, 0.3);
 
-            &:hover{
+            &:hover {
                 box-shadow: 0px 0px 30px 1px rgba(2, 143, 68, 0.5);
                 border-radius: 20px !important;
             }
+
             img {
                 width: 70px;
                 height: 70px;
@@ -393,9 +409,10 @@
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             background-color: $white;
             width: 100%;
-            &:hover{
+
+            &:hover {
                 box-shadow: 0px 0px 30px 1px rgba(2, 143, 68, 0.5);
-                
+
             }
 
             .img-div {
@@ -490,7 +507,8 @@
 
 .commercial-residential {
     position: relative;
-    .right-circle{
+
+    .right-circle {
         width: 10rem;
         height: 10rem;
         position: absolute;
@@ -501,6 +519,7 @@
         z-index: -1;
         opacity: 0.7;
     }
+
     .service-row {
         display: flex;
         justify-content: space-between;
@@ -515,18 +534,21 @@
             overflow: hidden;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             border-bottom: 5px solid $primary;
-            &:hover{
+
+            &:hover {
                 box-shadow: 0px 0px 30px 1px rgba(2, 143, 68, 0.5);
             }
+
             @media (max-width: 992px) {
                 width: 100%;
             }
 
             .img-div {
                 width: 100%;
-                max-height: 20rem;
+                max-height: 23rem;
                 overflow: hidden;
                 cursor: pointer;
+
                 img {
                     width: 100%;
                     object-fit: cover;

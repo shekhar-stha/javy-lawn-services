@@ -23,7 +23,7 @@
     position: absolute;
     transition: all 0.4s ease-in-out;
     right: 0;
-    
+
 }
 
 .changing-button:hover::after {
@@ -32,7 +32,8 @@
     width: 100%;
 }
 
-.changing-button span, .changing-button a  {
+.changing-button span,
+.changing-button a {
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -45,7 +46,8 @@
     transition: all 0.3s ease-in-out;
 }
 
-.changing-button:hover span, .changing-button:hover a{
+.changing-button:hover span,
+.changing-button:hover a {
     color: $dark;
     animation: scaleUp 0.3s ease-in-out;
 }

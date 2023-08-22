@@ -100,8 +100,8 @@
                 color: $white;
                 font-weight: 600;
                 margin-bottom: 3rem;
-                margin-top: 2rem;
-                width: 90%;
+                margin-top: 0rem;
+                width: 80%;
                 text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 
                 @media (max-width: 768px) {
@@ -130,7 +130,7 @@
                 color: $white;
                 font-weight: 500;
                 margin-bottom: 2rem;
-                width: 80%;
+                width: 65%;
                 text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
             }
         }

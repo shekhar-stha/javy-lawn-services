@@ -12982,6 +12982,7 @@ section {
 
 section:hover .sub-header {
   text-shadow: -3px 3px 29px rgb(91, 241, 72);
+  padding-left: 0rem;
 }
 section:hover .sub-header::after {
   left: inherit;

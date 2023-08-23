@@ -259,6 +259,7 @@ section{
     &:hover{
         .sub-header{
             text-shadow: -3px 3px 29px rgba(91,241,72,1);
+            padding-left: 0rem;
             &::after{
                 left: inherit;
                 left: 104%;

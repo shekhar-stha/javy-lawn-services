@@ -70,13 +70,18 @@
 nav {
     background-color: #ffffff;
     height: 9rem;
+    position: relative;
 
-    .container {
-        @media (max-width: 1200px) {
-            max-height: 8rem;
-            flex-wrap: nowrap !important;
-        }
+    @media (max-width: 576px) {
+        height: 7rem;
     }
+
+    // .container {
+    //     @media (max-width: 1200px) {
+    //         max-height: 8rem;
+    //         flex-wrap: nowrap !important;
+    //     }
+    // }
 
     .navbar-brand {
         @media (max-width: 270px) {
@@ -89,8 +94,10 @@ nav {
 
 
             @media (max-width: 576px) {
-                width: 10rem;
-                margin-bottom: -2rem;
+                width: 13rem;
+                // margin-bottom: -5rem;
+                position: absolute;
+                top: 1rem;
             }
             @media (max-width: 270px) {
                 width: 100%
